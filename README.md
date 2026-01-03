@@ -16,4 +16,5 @@ maxydev="$3"
 case "$1" in
 	1) exec vlc "$maxypasta/<aquivo>";;
 esac
-```ttps://youtu.be/QOYoQgEtQ2Q?si=PM4BpQHZts3wltc_
+```
+ttps://youtu.be/QOYoQgEtQ2Q?si=PM4BpQHZts3wltc_
