@@ -14,8 +14,8 @@ do
 	then
 		if [ "$usbdetecta" == "0" ]
 		then
-			echo -e "[\e[32mINFO\e[0m] pera 10s..." 1>&2
-			sleep 10
+			echo -e "[\e[32mINFO\e[0m] pera 3s..." 1>&2
+			sleep 3
 			if ./mountusb.sh "${dev}${devpart}" 1>&2
 			then
 				mounusb=$(./mountusb.sh "${dev}${devpart}")
