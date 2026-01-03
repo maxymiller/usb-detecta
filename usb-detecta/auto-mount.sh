@@ -5,6 +5,7 @@ echo "0" > ./valor/in
 out=0
 while true
 do
+	sleep 1
 	in="$(cat ./valor/in)"
 	if [ "$in" != "0" ]
 	then
