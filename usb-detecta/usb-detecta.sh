@@ -3,6 +3,9 @@ usbdetecta=0
 devsd="sd$1"
 dev="/dev/$devsd"
 devpart="$2"
+
+if [[ "$1" != "" && "$2" != "" ]]
+then
 echo -e "[\e[32mINFO\e[0m] $0: start" 1>&2
 echo -e "[\e[32mINFO\e[0m] perando por \"$dev\"..." 1>&2
 while true
@@ -41,3 +44,8 @@ do
 		sleep 3
 	fi
 done
+else
+	echo -e "[\e[31mERROR\e[0m] $0 b 1" 1>&2
+	echo "b = (ex. b = /dev/sdb, c = /dev/sdc)" 1>&2
+	echo "1 = (ex. 1 = /dev/sdb1, 2 = /dev/sdb2)"
+fi
