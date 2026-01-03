@@ -6,6 +6,7 @@ maxymenu="$(cat $maxypasta/menu.yml)"
 maxylist="$(cat $maxypasta/list.yml)"
 maxyerr=0
 
+sleep 1
 whiptail --title "usb" --msgbox "usb detecta" 10 40 1>&2
 while [ "$maxyerr" == "0" ]
 do
