@@ -31,7 +31,7 @@ do
 					mounusb=$(./mountusb.sh "${dev}${devpart}")
 				fi
 			fi
-			gnome-terminal -- bash -c "./list.sh \"$mounusb\" \"$devsd\""
+			gnome-terminal --full-screen -- bash -c "./list.sh \"$mounusb\" \"$devsd\""
 			usbdetecta=1
 		fi
 	else
