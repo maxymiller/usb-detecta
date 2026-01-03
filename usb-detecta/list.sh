@@ -21,6 +21,7 @@ do
 			maxyerr=1
 		fi
 	else
+		#desconectado usb
 		#./mount.sh 3 "" "" "$maxydevsd" "$maxypasta"
 		maxyerr=1
 	fi
