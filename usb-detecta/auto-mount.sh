@@ -1,5 +1,6 @@
 #!/bin/bash
 
+echo -e "[\e[32mINFO\e[0m] $0: start" 1>&2
 echo "0" > ./valor/in
 out=0
 while true
