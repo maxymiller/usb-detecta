@@ -1,0 +1,16 @@
+#!/bin/bash
+maxyfile="$1"
+echo '[Unit]' > "./code-pc/$maxyfile"
+echo 'Description="script de usb-detecta file root auto-mount.sh do maxymiller"' >> "./code-pc/$maxyfile"
+echo 'After=network.target' >> "./code-pc/$maxyfile"
+echo >> "./code-pc/$maxyfile"
+echo '[Service]' >> "./code-pc/$maxyfile"
+echo 'Type=simple' >> "./code-pc/$maxyfile"
+echo 'ExecStart=/bin/bash ./auto-mount.sh' >> "./code-pc/$maxyfile"
+echo 'TimeoutStartSec=0' >> "./code-pc/$maxyfile"
+echo 'User=root' >> "./code-pc/$maxyfile"
+pwd
+echo "WorkingDirectory=$PWD" >> "./code-pc/$maxyfile"
+echo >> "./code-pc/$maxyfile"
+echo '[Install]' >> "./code-pc/$maxyfile"
+echo 'WantedBy=graphical.target' >> "./code-pc/$maxyfile"

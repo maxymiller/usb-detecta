@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Exec=gnome-terminal -- bash -c "cd /home/maxymiller/usb-detecta-maxymiller; ./usb-detecta.sh \\"c\\" \\"2\\""
+Hidden=false
+NoDisplay=false
+X-GNOME-Autostart-enabled=true
+Name[pt_BR]=usb-detecta-maxymiller
+Name=usb-detecta-maxymiller
+Comment[pt_BR]=auto start usb-detecta.sh
+Comment=auto start

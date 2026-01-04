@@ -1,0 +1,13 @@
+[Unit]
+Description="script de usb-detecta file root auto-mount.sh do maxymiller"
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/bin/bash ./auto-mount.sh
+TimeoutStartSec=0
+User=root
+WorkingDirectory=/home/maxymiller/Documentos/linuxcode/usb-detecta
+
+[Install]
+WantedBy=graphical.target
