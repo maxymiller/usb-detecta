@@ -57,3 +57,12 @@ sudo ./auto-mount.sh
 ```
 ./usb-detecta.sh
 ```
+v2
+-
+- `GNOME` `systemd` boot
+```
+chmod u+x install.sh
+```
+```
+./install.sh
+```
