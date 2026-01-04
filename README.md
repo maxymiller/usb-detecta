@@ -1,7 +1,7 @@
 # usb-detecta
 e um código conectar o usb automático e Executar automático
 - app `gnome-terminal (Terminal do GNOME)`
-- comando `findmnt`
+- comando `findmnt` `whiptail`
 
 http://youtu.be/QOYoQgEtQ2Q?si=PM4BpQHZts3wltc
 
