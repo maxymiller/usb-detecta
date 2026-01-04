@@ -3,6 +3,7 @@ echo -e "[\e[32mINFO\e[0m] cp -r \"$PWD\" ~/usb-detecta-maxymiller"
 cp -r "$PWD" ~/usb-detecta-maxymiller
 echo -e "[\e[32mINFO\e[0m] cd ~/usb-detecta-maxymiller"
 cd ~/usb-detecta-maxymiller
+mkdir ./code-pc
 mv ./systemd/start.sh ./
 chmod u+x ./systemd/systemd.sh ./systemd/install.sh ./systemd/autostart.sh
 chmod u+x auto-mount.sh mount.sh list.sh mountusb.sh usb-detecta.sh start.sh uninstall.sh
