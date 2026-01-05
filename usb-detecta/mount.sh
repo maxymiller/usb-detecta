@@ -18,6 +18,7 @@ echo "$in" > ./valor/in
 
 while [ "$out" == "" ]
 do
+	sleep 1
 	out="$(cat ./valor/out)"
 done
 
