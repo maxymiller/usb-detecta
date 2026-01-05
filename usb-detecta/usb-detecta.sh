@@ -34,6 +34,7 @@ do
 			gnome-terminal --full-screen -- bash -c "./list.sh \"$mounusb\" \"$devsd\""
 			usbdetecta=1
 		fi
+		sleep 3
 	else
 		if [ "$usbdetecta" == "1" ]
 		then
