@@ -34,7 +34,6 @@ do
 			gnome-terminal --full-screen -- bash -c "./list.sh \"$mounusb\" \"$devsd\""
 			usbdetecta=1
 		fi
-		sleep 3
 	else
 		if [ "$usbdetecta" == "1" ]
 		then
@@ -42,8 +41,8 @@ do
 			usbdetecta=0
 		fi
 		#echo -e "[\e[31mERROR\e[0m] 3s" 1>&2
-		sleep 3
 	fi
+	sleep 3
 done
 else
 	echo -e "[\e[31mERROR\e[0m] $0 b 1" 1>&2
