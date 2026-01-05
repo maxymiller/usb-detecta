@@ -16,9 +16,9 @@ do
 		case "$in" in
 			1) mount "${dev}${devpart}" && out=1;;
 			2) mkdir -p "/mnt/media/${devsd}/${devpart}"
-			mount "${dev}${devpart}" "/mnt/media/${devsd}/${devpart}" && out=1;;
+			#mount "${dev}${devpart}" "/mnt/media/${devsd}/${devpart}" && out=1;;
 			#todo mundo poder
-			#mount "${dev}${devpart}" "/mnt/media/${devsd}/${devpart}" -o rw,umask=000 && out=1;;
+			mount "${dev}${devpart}" "/mnt/media/${devsd}/${devpart}" -o rw,umask=000 && out=1;;
 			3) umount "$maxypasta"; udisksctl power-off -b "/dev/$devsd" && out=1;;
 		esac
 		echo > ./valor/devsd

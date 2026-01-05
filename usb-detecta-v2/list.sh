@@ -23,7 +23,7 @@ do
 		fi
 	else
 		#desconectado usb
-		#./mount.sh 3 "" "" "$maxydevsd" "$maxypasta"
+		./mount.sh 3 "" "" "$maxydevsd" "$maxypasta"
 		maxyerr=1
 	fi
 done
