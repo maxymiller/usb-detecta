@@ -59,7 +59,7 @@ sudo ./auto-mount.sh
 ```
 v2
 -
-- `GNOME` `systemd` boot
+- `GNOME` `graphical.target (systemd)` boot
 ```
 chmod u+x install.sh
 ```
