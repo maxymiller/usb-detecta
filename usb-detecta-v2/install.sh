@@ -1,5 +1,5 @@
 #!/bin/bash
-if [ "$PWD" != "/home/$USER" ]
+if [ "$PWD" != "/home/$USER/usb-detecta-maxymiller" ]
 then
 	echo -e "[\e[32mINFO\e[0m] cp -r \"$PWD\" ~/usb-detecta-maxymiller"
 	cp -r "$PWD" ~/usb-detecta-maxymiller
