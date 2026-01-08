@@ -2,7 +2,7 @@
 maxyfile="$1"
 echo '[Unit]' > "./code-pc/$maxyfile"
 echo 'Description="script de usb-detecta file root auto-mount.sh do maxymiller"' >> "./code-pc/$maxyfile"
-echo 'After=network.target' >> "./code-pc/$maxyfile"
+echo 'After=graphical.target' >> "./code-pc/$maxyfile"
 echo >> "./code-pc/$maxyfile"
 echo '[Service]' >> "./code-pc/$maxyfile"
 echo 'Type=simple' >> "./code-pc/$maxyfile"
