@@ -1,6 +1,9 @@
 #!/bin/bash
-echo -e "[\e[32mINFO\e[0m] cp -r \"$PWD\" ~/usb-detecta-maxymiller"
-cp -r "$PWD" ~/usb-detecta-maxymiller
+if [ "$PWD" != "/home/$USER" ]
+then
+	echo -e "[\e[32mINFO\e[0m] cp -r \"$PWD\" ~/usb-detecta-maxymiller"
+	cp -r "$PWD" ~/usb-detecta-maxymiller
+fi
 echo -e "[\e[32mINFO\e[0m] cd ~/usb-detecta-maxymiller"
 cd ~/usb-detecta-maxymiller
 mkdir ./code-pc
