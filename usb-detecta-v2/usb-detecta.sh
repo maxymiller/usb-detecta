@@ -47,5 +47,5 @@ done
 else
 	echo -e "[\e[31mERROR\e[0m] $0 b 1" 1>&2
 	echo "b = (ex. b = /dev/sdb, c = /dev/sdc)" 1>&2
-	echo "1 = (ex. 1 = /dev/sdb1, 2 = /dev/sdb2)"
+	echo "1 = (ex. 1 = /dev/sdb1, 2 = /dev/sdb2)" 1>&2
 fi
